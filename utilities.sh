@@ -71,6 +71,7 @@ cli_utils() {
     utils=(
         circleci
         httpie
+        htop
         wget
         thefuck
         yarn
@@ -98,28 +99,26 @@ programs() {
 
     programs=(
         1password
-        avast-security
         backblaze
         backuploupe
         caffeine
         docker
         dropbox
         firefox
-        gas-mask
         google-chrome
         iterm2
         kaleidoscope
+        kap
         kitematic
-        licecap
         postman
         private-eye
         sequel-pro
-        slack
         skype
+        slack
         spotify
+        the-unarchiver
         toggl
         transmit
-        the-unarchiver
         vagrant
         vagrant-manager
         virtualbox
@@ -225,7 +224,6 @@ php_deps() {
 #   None
 #######################################
 install_phpcs() {
-    # @todo:: check that Pear is installed.
-    sudo pear install PHP_CodeSniffer
+    brew install php-code-sniffer
     composer create-project wp-coding-standards/wpcs:dev-master --no-dev
 }
