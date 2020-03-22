@@ -227,3 +227,18 @@ install_phpcs() {
     brew install php-code-sniffer
     composer create-project wp-coding-standards/wpcs:dev-master --no-dev
 }
+
+#######################################
+# Copy files from this directory into their appropriate locations.
+# Arguments:
+#   None
+# Returns:
+#   None
+#######################################
+copy_files() {
+    cp ./.bashprofile ~/.bashprofile
+    cp ./.bashrc ~/.bashrc
+    cp ./.bashrc ~/.bashrc
+    cp ./.gitconfig ~/.gitconfig
+    cp ./.gitignore_global ~/.gitignore_global
+}

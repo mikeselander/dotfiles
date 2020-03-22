@@ -8,6 +8,9 @@ IFS=$'\n\t'
 # Verify that we're setup properly.
 check_for_software
 
+# Copy configuration files to their home
+copy_files
+
 # Brew - the magic is here.
 brew_me
 
