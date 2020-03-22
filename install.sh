@@ -28,5 +28,6 @@ node_deps
 
 # PHP et. al
 php_deps
+install_phpcs
 
 print_message "✅ Installation Complete"
