@@ -236,6 +236,8 @@ install_phpcs() {
 #   None
 #######################################
 copy_files() {
+    print_message "🕚 Copying configuration files to their correct location"
+
     cp ./.bashprofile ~/.bashprofile
     cp ./.bashrc ~/.bashrc
     cp ./.bashrc ~/.bashrc
