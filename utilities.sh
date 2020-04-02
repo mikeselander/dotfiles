@@ -45,6 +45,17 @@ check_for_software() {
 }
 
 #######################################
+# I like Bash.
+# Arguments:
+#   None
+# Returns:
+#   None
+#######################################
+use_bash() {
+  chsh -s /bin/bash
+}
+
+#######################################
 # Ensure that Brew is properly setup.
 # Arguments:
 #   None
@@ -55,6 +66,7 @@ brew_me() {
     print_message "🕚 Brew"
 
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    brew cleanup
     brew doctor
 }
 
@@ -238,9 +250,12 @@ install_phpcs() {
 copy_files() {
     print_message "🕚 Copying configuration files to their correct location"
 
-    cp ./.bashprofile ~/.bashprofile
+    cp ./.bash_profile ~/.bash_profile
     cp ./.bashrc ~/.bashrc
     cp ./.bashrc ~/.bashrc
     cp ./.gitconfig ~/.gitconfig
     cp ./.gitignore_global ~/.gitignore_global
+
+    # Ensure that gitignore global is respected at the user path.
+    git config --global core.excludesfile ~/.gitignore_global
 }

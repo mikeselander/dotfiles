@@ -5,6 +5,8 @@ IFS=$'\n\t'
 # Import our utilities.
 . utilities.sh
 
+use_bash
+
 # Verify that we're setup properly.
 check_for_software
 
