@@ -211,7 +211,9 @@ php_deps() {
     ruby -v
 
     # PHP
+    # @todo:: homebrew/PHP no longer works.
     brew tap homebrew/php
+    mv composer.phar /usr/local/bin/composer
 
     # MySQL
     brew install mysql

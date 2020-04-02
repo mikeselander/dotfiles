@@ -3,7 +3,7 @@ if [ -f "$HOME/.bashrc" ]; then
     . "$HOME/.bashrc"
 fi
 
-alias composer="php /usr/local/bin/composer.phar"
+alias composer="php /usr/local/bin/composer"
 alias gitco='function _gitco(){ git checkout $1; git pull; }; _gitco'
 
 eval $(thefuck --alias)
