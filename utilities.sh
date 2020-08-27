@@ -247,7 +247,6 @@ copy_files() {
 
     cp ./.bash_profile ~/.bash_profile
     cp ./.bashrc ~/.bashrc
-    cp ./.bashrc ~/.bashrc
     cp ./.gitconfig ~/.gitconfig
     cp ./.gitignore_global ~/.gitignore_global
 
