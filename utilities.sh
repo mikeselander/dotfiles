@@ -81,9 +81,9 @@ cli_utils() {
     print_message "🕚 Brewing CLI Utils"
 
     utils=(
-        circleci
-        httpie
+        direnv
         htop
+        httpie
         wget
         thefuck
         yarn
@@ -111,7 +111,6 @@ programs() {
 
     programs=(
         1password
-        backblaze
         backuploupe
         caffeine
         docker
@@ -119,7 +118,6 @@ programs() {
         firefox
         google-chrome
         iterm2
-        kaleidoscope
         kap
         kitematic
         postman
@@ -131,9 +129,6 @@ programs() {
         the-unarchiver
         toggl
         transmit
-        vagrant
-        vagrant-manager
-        virtualbox
         visual-studio-code
         whatsapp
         zeplin
@@ -160,8 +155,6 @@ visual_code_extensions() {
         eg2.vscode-npm-script
         ionutvmi.path-autocomplete
         christian-kohler.npm-intellisense
-        bmewburn.vscode-intelephense-client
-        tungvn.wordpress-snippet
     );
 
     for i in ${extensions[@]}; do
