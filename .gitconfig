@@ -39,3 +39,5 @@
   # Pretty format
   changes = "!f() { git log --pretty=format:'* %s' $1..$2; }; f"
 
+[core]
+	excludesfile = /Users/mike/.gitignore_global
