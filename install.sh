@@ -28,8 +28,8 @@ visual_code_extensions
 # Node et. al.
 node_deps
 
-# PHP et. al
-php_deps
-install_phpcs
+# PHP et. al (if on personal CPU)
+#php_deps
+#install_phpcs
 
 print_message "✅ Installation Complete"
